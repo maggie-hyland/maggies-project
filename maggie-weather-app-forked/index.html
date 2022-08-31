@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/594f17bd07.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="full-forecast container text-center rounded shadow-sm p-3">
+      <div class="todays-forecast container text-center rounded shadow-sm">
+        <div class="row">
+          <div class="col-4">
+            <i class="fa-solid fa-cloud cloud-icon"></i>
+          </div>
+          <div class="col-3"><span class="temperature" id="temperature">20</span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> | 
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+          <div class="col-5">
+            <div class="search-box input-group rounded fixed">
+                <form class="search-form" id="search-city-input">
+              <input
+                type="search"
+                class="form-control rounded"
+                autofocus="on"
+                autocomplete="off"
+                id="search-query"
+                placeholder="Search"
+              />
+            </div> <button id='current-location-button'>
+              current location
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <h2 id="city-element">Detroit, MI</h2>
+            <span id="date-time"></span>
+            <span id="weather-description"></span>
+          </div>
+          <div class="col-3 weather-details">
+            Precipitation: 7%<br />Humidity: 62%<br />Wind: 10mph
+          </div>
+        </div>
+      </div>
+      <div
+        class="five-day-forecast container text-center rounded p-3 shadow-sm bg-transparent"
+      >
+        <div class="row">
+          <div class="col">
+            Wed
+            <div class="day-card card py-3">
+              <i class="fa-solid fa-sun sun-icon pb-3"></i>
+              <h5 class="card-title">84°</h5>
+              <p class="card-text">88°/74°</p>
+            </div>
+          </div>
+          <div class="col">
+            Thu
+            <div class="day-card card py-3 shadow-sm">
+              <i class="fa-solid fa-cloud-sun cloud-sun-icon pb-3"></i>
+              <h5 class="card-title">82°</h5>
+              <p class="card-text">87°/75°</p>
+            </div>
+          </div>
+          <div class="col">
+            Fri
+            <div class="day-card card py-3 shadow-sm">
+              <i class="fa-solid fa-sun sun-icon pb-3"></i>
+              <h5 class="card-title">80°</h5>
+              <p class="card-text">84°/73°</p>
+            </div>
+          </div>
+          <div class="col">
+            Sat
+            <div class="day-card card py-3 shadow-sm">
+              <i class="fa-solid fa-sun sun-icon pb-3"></i>
+              <h5 class="card-title">76°</h5>
+              <p class="card-text">81°/72°</p>
+            </div>
+          </div>
+          <div class="col">
+            Sun
+            <div class="day-card card py-3 shadow-sm">
+              <i class="fa-solid fa-cloud-sun cloud-sun-icon pb-3"></i>
+              <h5 class="card-title">79°</h5>
+              <p class="card-text">85°/74°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>

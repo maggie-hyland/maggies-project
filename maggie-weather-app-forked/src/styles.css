@@ -1,0 +1,82 @@
+.todays-forecast h1 {
+  font-size: 70px;
+  text-align: left;
+}
+.card-text {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+}
+h5.card-title {
+  font-size: 28px;
+}
+div.weather-details {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  opacity: 0.8;
+}
+/*icons*/
+.todays-forecast .cloud-sun-icon,
+.todays-forecast .sun-icon,
+.todays-forecast .cloud-icon {
+  font-size: 95px;
+}
+.day-card .cloud-sun-icon,
+.day-card .sun-icon,
+.day-card .cloud-icon {
+  font-size: 44px;
+}
+.sun-icon {
+  color: white;
+}
+.cloud-icon {
+  color: white;
+}
+.cloud-sun-icon {
+  color: white;
+}
+/*containers*/
+.full-forecast {
+  background: linear-gradient(
+    180deg,
+    rgb(125, 201, 255) 31%,
+    rgb(165, 131, 255) 100%
+  );
+  margin: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.todays-forecast {
+  color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    180deg,
+    rgb(161, 243, 255) 18%,
+    rgb(221, 209, 253) 100%
+  );
+  padding: 20px;
+}
+.five-day-forecast {
+  color: rgba(0, 0, 0, 0.55);
+  background: linear-gradient(
+    180deg,
+    rgb(221, 209, 253) 0%,
+    rgb(190, 166, 253) 100%
+  );
+  margin-top: 15px;
+}
+.day-card {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgb(205, 186, 255) 0%,
+    rgb(166, 134, 255) 100%
+  ) !important;
+}
+.day-card:hover {
+  background: rgb(205, 186, 255) 0%;
+}
+/*search & links*/
+.search-box {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: right;
+}
