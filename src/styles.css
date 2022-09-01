@@ -80,3 +80,8 @@ div.weather-details {
   padding: 20px;
   text-align: right;
 }
+#github-link {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
